@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+    <definition name="default" template="/WEB-INF/jspTiles/base/baseLayout.jsp">
+        <put-attribute name="title" value="/WEB-INF/jspTiles/base/title.jsp" />
+        <put-attribute name="script" value="" />
+        <put-attribute name="error" value="/WEB-INF/jspTiles/base/error.jsp" />
+        <put-attribute name="header" value="/WEB-INF/jspTiles/base/header.jsp" />
+        <put-attribute name="menu" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="one_news" value="" />
+        <put-attribute name="newsAdd" value="" />
+        <put-attribute name="newsEdit" value="" />
+        <put-attribute name="userAdd" value="" />
+        <put-attribute name="pagination" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jspTiles/base/footer.jsp" />
+    </definition>
+
+    <definition name="newses" extends="default">
+        <put-attribute name="menu" value="/WEB-INF/jspTiles/base/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jspTiles/base/newses.jsp" />
+        <put-attribute name="pagination" value="/WEB-INF/jspTiles/base/pagination.jsp" />
+    </definition>
+
+    <definition name="oneNews" extends="default">
+        <put-attribute name="one_news" value="/WEB-INF/jspTiles/user/one_news.jsp" />
+    </definition>
+
+    <definition name="admin" extends="default">
+        <put-attribute name="menu" value="/WEB-INF/jspTiles/admin/menuAdmin.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jspTiles/admin/adminCommand.jsp" />
+        <put-attribute name="pagination" value="/WEB-INF/jspTiles/admin/paginationAdmin.jsp" />
+    </definition>
+
+    <definition name="newsAdd" extends="default">
+        <put-attribute name="script" value="/WEB-INF/jspTiles/admin/script.jsp" />
+        <put-attribute name="newsAdd" value="/WEB-INF/jspTiles/admin/newsAdd.jsp" />
+    </definition>
+
+    <definition name="newsEdit" extends="default">
+        <put-attribute name="script" value="/WEB-INF/jspTiles/admin/script.jsp" />
+        <put-attribute name="newsEdit" value="/WEB-INF/jspTiles/admin/newsEdit.jsp" />
+    </definition>
+
+    <definition name="userAdd" extends="default">
+        <put-attribute name="userAdd" value="/WEB-INF/jspTiles/admin/userAdd.jsp" />
+    </definition>
+
+    <definition name="login" template="/WEB-INF/jspTiles/login/login.jsp"/>
+
+</tiles-definitions>
