@@ -1,2 +1,21 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+=======
+.idea/*
+>>>>>>> commit .gitignire
+=======
 .idea/*
 /integrations-tests/integration-tests/.idea/
+>>>>>>> 6b5b39a1f297a92374f48d1260476b4e1c283cd2

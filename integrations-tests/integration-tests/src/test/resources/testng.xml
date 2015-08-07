@@ -2,34 +2,17 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TestSuite" thread-count="2" parallel="tests" >
-
+<suite name="TestSuite" verbose="2" parallel="tests" thread-count="2">
     <test name="ChromeTest">
-
         <parameter name="browser" value="chrome" />
-
         <classes>
-
-            <class name="by.news.test.AppTest">
-
-            </class>
-
+            <class name="by.news.test.LoginPageTest"/>
         </classes>
-
     </test>
-
     <test name="FirefoxTest">
-
         <parameter name="browser" value="firefox" />
-
         <classes>
-
-            <class name="by.news.test.AppTest">
-
-            </class>
-
+            <class name="by.news.test.LoginPageTest"/>
         </classes>
-
     </test>
-
 </suite>
