@@ -45,10 +45,20 @@ public class LoginPage {
         return this;
     }
 
+    /**
+     *
+     * @param username
+     * @param password
+     */
     public void userSignInSteps(String username,String password){
         this.inputUserName(username).inputPassword(password).signIn();
     }
 
+    /**
+     *
+     * @param driver
+     * @return
+     */
     public boolean checkErrorMassage(WebDriver driver){
         return driver.findElement(By.xpath("//html")).getText().contains(errorMassage);
     }
