@@ -1,6 +1,5 @@
 package by.news.pages;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,20 +20,6 @@ public class AddNewsPage {
     private WebElement textInput;
     @FindBy(id = "newsEditFormButton")
     private WebElement seveNewsButton;
-
-    /**
-     *
-     * @param driver
-     */
-    public AddNewsPage(WebDriver driver) {
-        if (!driver.getCurrentUrl().contains(URL_MATCH)) {
-            throw new IllegalStateException("" +
-                    "This is not page you are expected!"
-            );
-        }
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
-    }
 
     public AddNewsPage inputDate(String date) {
         dateInput.sendKeys(date);
@@ -64,23 +49,5 @@ public class AddNewsPage {
         seveNewsButton.click();
         return this;
     }
-
-    /**
-     *
-     * @param date
-     * @param title
-     * @param annotation
-     * @param category
-     * @param text
-     */
-    public void addNewsInSteps(String date, String title, String annotation, String category, String text) {
-        this.inputDate(date)
-                .inputTitle(title)
-                .inputAnnotation(annotation)
-                .inputCategory(category)
-                .inputText(text)
-                .saveNews();
-    }
-
 
 }

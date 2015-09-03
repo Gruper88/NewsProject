@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newses>
+    <news>
+        <newsDate>2015-08-13</newsDate>
+        <newsTitle>TestTitle</newsTitle>
+        <newsAnnotation>TestAnnotation</newsAnnotation>
+        <newsCategory>Sport</newsCategory>
+        <newsText>Test_news_text</newsText>
+    </news>
+</newses>
