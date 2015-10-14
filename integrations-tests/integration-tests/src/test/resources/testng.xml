@@ -6,6 +6,7 @@
     <test name="ChromeTest">
         <parameter name="browser" value="chrome" />
         <parameter name="browserDriverURL" value="C:\\chromedriver.exe" />
+        <parameter name="errorMassage" value="Access denied!!!"/>
         <classes>
             <class name="by.news.test.AdminPageTest"/>
         </classes>
@@ -13,6 +14,7 @@
     <test name="FirefoxTest">
         <parameter name="browser" value="firefox" />
         <parameter name="browserDriverURL" value="C:\\chromedriver.exe" />
+        <parameter name="errorMassage" value="Access denied!!!"/>
         <classes>
             <class name="by.news.test.AdminPageTest"/>
         </classes>

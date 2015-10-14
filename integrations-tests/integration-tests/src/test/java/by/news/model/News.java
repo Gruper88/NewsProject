@@ -1,16 +1,25 @@
 package by.news.model;
 
-public class News{
+import javax.xml.bind.annotation.*;
 
+@XmlRootElement(name = "news")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class News {
+
+    @XmlElement(name = "newsDate")
     private String date;
 
+    @XmlElement(name = "newsTitle")
     private String title;
 
+    @XmlElement(name = "newsAnnotation")
     private String description;
 
+    @XmlElement(name = "newsCategory")
     private String category;
 
-    private String newstext;
+    @XmlElement(name = "newsText")
+    private String newsText;
 
 
     public String getDate() {
@@ -45,12 +54,12 @@ public class News{
         this.category = category;
     }
 
-    public String getNewstext() {
-        return newstext;
+    public String getNewsText() {
+        return newsText;
     }
 
-    public void setNewstext(String newstext) {
-        this.newstext = newstext;
+    public void setNewsText(String newsText) {
+        this.newsText = newsText;
     }
 
     @Override
@@ -63,7 +72,7 @@ public class News{
         if (date != null ? !date.equals(news.date) : news.date != null) return false;
         if (description != null ? !description.equals(news.description) : news.description != null) return false;
         if (category != null ? !category.equals(news.category) : news.category != null) return false;
-        if (newstext != null ? !newstext.equals(news.newstext) : news.newstext != null) return false;
+        if (newsText != null ? !newsText.equals(news.newsText) : news.newsText != null) return false;
         if (title != null ? !title.equals(news.title) : news.title != null) return false;
 
         return true;
@@ -75,7 +84,23 @@ public class News{
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
         result = 31 * result + (category != null ? category.hashCode() : 0);
-        result = 31 * result + (newstext != null ? newstext.hashCode() : 0);
+        result = 31 * result + (newsText != null ? newsText.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        String separator = System.getProperty("line.separator");
+
+        result.append("News date:" + date + separator);
+        result.append("Title:" + title + separator);
+        result.append("Description:" + description + separator);
+        result.append("Category:" + category + separator);
+        result.append("News text:" + newsText + separator);
+
+        return result.toString();
+    }
+
+
 }

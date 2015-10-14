@@ -1,29 +1,19 @@
 package by.news.steps;
 
+import by.news.pages.BasePage;
 import by.news.pages.LoginPage;
-import by.news.pages.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import by.news.pages.Pages;
 
-import org.openqa.selenium.support.PageFactory;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserSignInSteps {
-    WebDriver driver = WebDriverManager.getDriverInstance();
-    LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 
-    /**
-     * @param username
-     * @param password
-     */
     public void userSignInSteps(String username, String password) {
-        loginPage.inputUserName(username).inputPassword(password).signIn();
+        Pages.at(LoginPage.class).inputUserName(username).inputPassword(password).signIn();
+    }
+    public boolean checkErrorMassage(String errorMassage) {
+        return  Pages.at(BasePage.class).checkErrorMassage(errorMassage);
     }
 
-    /**
-     * @param driver
-     * @return
-     */
-    public boolean checkErrorMassage(WebDriver driver, String errorMassage) {
-        return driver.findElement(By.xpath("//html")).getText().contains(errorMassage);
-    }
 }

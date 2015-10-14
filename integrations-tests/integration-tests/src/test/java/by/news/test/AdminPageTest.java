@@ -1,63 +1,77 @@
 package by.news.test;
 
-import by.news.pages.WebDriverManager;
-import by.news.dataprovider.TestParameterDataProvider;
-import java.util.Map;
-
 import by.news.model.News;
+import by.news.model.NewsFactory;
+import by.news.pages.WebDriverManager;
+import by.news.steps.AddNewsPageSteps;
 import by.news.steps.AdminPageSteps;
 import by.news.steps.UserSignInSteps;
+import by.news.testConfiguration.TestConfiguration;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class AdminPageTest {
+@ContextConfiguration(locations = {"classpath:spring_config_tests.xml"})
+public class AdminPageTest extends AbstractTestNGSpringContextTests {
+
+    private String browser;
+
+    private String browserDriverURL;
+
+    private String errorMassage;
+
+    @Autowired
+    private TestConfiguration conf;
+
+    @Autowired
+    private AddNewsPageSteps addNewsPageSteps;
+
+    @Autowired
+    private UserSignInSteps userSteps;
+
+    @Autowired
+    private NewsFactory newsFactory;
 
     @BeforeTest
-    @Parameters({"browser","browserDriverURL"})
-    public void setup(String browser,String browserDriverURL) throws Exception {
-        WebDriverManager.startDriver(browser, browserDriverURL);
+    @Parameters({"browser", "browserDriverURL", "errorMassage"})
+    public void setup(String browser, String browserDriverURL, String errorMassage) throws Exception {
+        this.errorMassage = errorMassage;
+        this.browser = browser;
+        this.browserDriverURL = browserDriverURL;
     }
 
-    @Test(dataProvider = "newsData", dataProviderClass =TestParameterDataProvider.class)
-    public void testLogin(News news, Map<String, String> testData) {
+    @BeforeMethod
+    public void openApp() {
+        WebDriverManager.startDriver(browser, browserDriverURL);
+        WebDriverManager.getDriverInstance().get(conf.getLoginPage());
+    }
 
-        WebDriverManager.getDriverInstance().get(testData.get("loginPageURL"));
+    @Test
+    public void testLogin() {
+        WebDriverManager.getDriverInstance().get(conf.getLoginPage());
         UserSignInSteps userSteps = new UserSignInSteps();
-        userSteps.userSignInSteps(testData.get("username"), testData.get("password"));
-        Assert.assertFalse(userSteps.checkErrorMassage(WebDriverManager.getDriverInstance(), testData.get("errorMassage")));
+        userSteps.userSignInSteps(conf.getUseremail(), conf.getPassword());
+        Assert.assertFalse(userSteps.checkErrorMassage(errorMassage),"Invalid user data!");
+    }
+
+    @Test(dependsOnMethods = "testLogin")
+    public void testAddNews() {
+        News news = newsFactory.getRandomNews();
+        userSteps.userSignInSteps(conf.getUseremail(), conf.getPassword());
+        AdminPageSteps adminPageSteps = new AdminPageSteps();
+        adminPageSteps.addNews();
+        addNewsPageSteps.addNewsInSteps(news);
+        Assert.assertTrue(adminPageSteps.findNewsByTitle(news.getTitle()), "Added news not found!");
+        adminPageSteps.deleteNews(news.getTitle());
+    }
+
+    @AfterMethod
+    public void endTests() {
         AdminPageSteps adminPageSteps = new AdminPageSteps();
         adminPageSteps.logOut();
-    }
-
-    /*
-        @Test
-        public void testLogOut(){
-            driver.get(loginPageURL);
-            LoginPage loginPage = new LoginPage(driver);
-            loginPage.userSignInSteps(username, password);
-            AdminPage adminPage= new AdminPage(driver);
-            adminPage.logOut();
-            Assert.assertFalse(adminPage.checkLogOutButton(driver,username));
-        }
-
-        @Test
-        public void testAddNews(){
-            driver.get(loginPageURL);
-            LoginPage loginPage = new LoginPage(driver);
-            loginPage.userSignInSteps(username, password);
-            AdminPage adminPage= new AdminPage(driver);
-            adminPage.addNews();
-            AddNewsPage addNewsPage = new AddNewsPage(driver);
-            addNewsPage.addNewsInSteps(newsDate,newsTitle,newsAnnotation,newsCategory,newsText); // Add news
-            //boolean newsOnPage = adminPage.findNewsByTitle(driver,newsTitle);   //Check added news
-            adminPage.deleteNews(); //Delete added news
-            adminPage.logOut();
-            //Assert.assertTrue(newsOnPage,"Added news not found!");
-
-        }
-    */
-    @AfterTest
-    public void endTests() {
         WebDriverManager.stopDriver();
     }
 }

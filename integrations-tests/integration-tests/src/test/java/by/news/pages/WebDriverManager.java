@@ -4,14 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.util.HashMap;
-
 public class WebDriverManager {
-    private static HashMap<Long, WebDriver> map = new HashMap<Long, WebDriver>();
+    private static final ThreadLocal<WebDriver> WD_INSTANCE = new ThreadLocal<WebDriver>();
 
     public static WebDriver getDriverInstance() {
-        WebDriver d = map.get(Thread.currentThread().getId());
-        return d;
+        WebDriver driver = WD_INSTANCE.get();
+        driver.manage().window().maximize();
+        return driver;
     }
 
     public static WebDriver startDriver(String type, String chromeURL) {
@@ -20,19 +19,18 @@ public class WebDriverManager {
         if (type.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", chromeURL);
             driver = new ChromeDriver();
-            map.put(Thread.currentThread().getId(), driver);
         } else if (type.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
-            map.put(Thread.currentThread().getId(), driver);
         } else {
             throw new IllegalArgumentException("Browser type not supported: " + type);
         }
-        return driver;
+        WD_INSTANCE.set(driver);
+        return WD_INSTANCE.get();
     }
 
     public static void stopDriver() {
-        WebDriver d = map.get(Thread.currentThread().getId());
-        d.close();
+       WD_INSTANCE.get().quit();
+       WD_INSTANCE.set(null);
     }
 }
 
