@@ -2,17 +2,19 @@ package by.news.steps;
 
 import by.news.pages.AdminPage;
 import by.news.pages.Pages;
+import org.apache.log4j.Logger;
 
 public class AdminPageSteps {
 
     public boolean findNewsByTitle(String newsTitle) {
-        if (!Pages.at(AdminPage.class).findNewsTitle(newsTitle)) {
-            //Next page
-            Pages.at(AdminPage.class).nextPage();
+        for (int i=0;i<Pages.at(AdminPage.class).getPaginationButtonList().size();i++){
+            //if don`t find news on page - go to the next page
             if (Pages.at(AdminPage.class).findNewsTitle(newsTitle)) {
                 return true;
-            } else return false;
-        } else return true;
+            }
+            Pages.at(AdminPage.class).getPaginationButtonList().get(i+1).click();
+        }
+        return false;
     }
 
     public void deleteNews(String newsTitle) {

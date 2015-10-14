@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.NoSuchElementException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class AdminPage {
@@ -13,8 +13,6 @@ public class AdminPage {
     private WebElement logOutButton;
     @FindBy(id = "addNews")
     private WebElement addNewsButton;
-    @FindBy(linkText = "6-10")
-    private WebElement paginationButton;
 
     public AdminPage logOut() {
         WebDriverManager.getDriverInstance().manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
@@ -30,9 +28,8 @@ public class AdminPage {
         return this;
     }
 
-    public AdminPage nextPage(){
-        paginationButton.click();
-        return this;
+    public List <WebElement> getPaginationButtonList(){
+        return  WebDriverManager.getDriverInstance().findElements(By.xpath("//a[contains(@href,'news_count=5')]"));
     }
 
     public AdminPage deleteNews(String newsTitle) {
