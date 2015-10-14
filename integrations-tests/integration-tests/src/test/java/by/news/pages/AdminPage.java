@@ -30,6 +30,11 @@ public class AdminPage {
         return this;
     }
 
+    public AdminPage nextPage(){
+        paginationButton.click();
+        return this;
+    }
+
     public AdminPage deleteNews(String newsTitle) {
         getDeleteNewsButton(getNewsLink(newsTitle)).click();
         return this;
