@@ -14,118 +14,79 @@ import java.io.Serializable;
 @Service
 @Transactional(isolation = Isolation.DEFAULT, propagation = Propagation.REQUIRED, readOnly = false)
 public class BaseService<T> implements IBaseService<T> {
-    private static Logger log = Logger.getLogger(BaseService.class);
+    final static Logger LOGGER = Logger.getLogger(BaseService.class);
 
     private IBaseDao<T> baseDao;
-
-    public BaseService() {
-    }
 
     @Autowired
     public BaseService(IBaseDao<T> baseDao) {
         this.baseDao = baseDao;
     }
 
-    /**
-     *
-     * @param clazz
-     * @param id
-     * @return
-     * @throws DaoException
-     */
     @Override
     @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
-    public T get(Class<T> clazz, Serializable id) throws DaoException {
-        if(id == null) return (T) new DaoException();
-        T p = null;
+    public T get(Class<T> obj, Serializable id) throws DaoException {
+        if (id == null) return (T) new DaoException();
+        T pojo = null;
         try {
-            p = (T) baseDao.get(clazz, id);
+            pojo = (T) baseDao.get(obj, id);
         } catch (DaoException e) {
             throw new DaoException(e);
         }
-        return p;
+        return pojo;
     }
 
-    /**
-     *
-     * @param p
-     * @throws DaoException
-     */
     @Override
-    public void saveOrUpdate(Object p) throws DaoException {
-        if(p == null)  new DaoException();
+    public void saveOrUpdate(Object pojo) throws DaoException {
+        if (pojo == null) new DaoException();
         try {
-            baseDao.saveOrUpdate((T) p);
+            baseDao.saveOrUpdate((T) pojo);
         } catch (DaoException e) {
             throw new DaoException(e);
         }
     }
 
-    /**
-     *
-     * @param p
-     * @throws DaoException
-     */
     @Override
-    public void deleteByObject(T p) throws DaoException {
-        if(p == null) new DaoException();
+    public void deleteByObject(T pojo) throws DaoException {
+        if (pojo == null) new DaoException();
         try {
-            baseDao.deleteByObject(p);
+            baseDao.deleteByObject(pojo);
         } catch (DaoException e) {
             throw new DaoException(e);
         }
     }
 
-    /**
-     *
-     * @param clazz
-     * @param id
-     * @return
-     * @throws DaoException
-     */
     @Override
     public T delete(Class clazz, Serializable id) throws DaoException {
-        if(id == null) return (T) new DaoException();
-        T p = null;
+        if (id == null) return (T) new DaoException();
+        T pojo = null;
         try {
-            p = (T) baseDao.delete(clazz, id);
+            pojo = (T) baseDao.delete(clazz, id);
         } catch (DaoException e) {
             throw new DaoException(e);
         }
-        return p;
+        return pojo;
     }
 
-    /**
-     *
-     * @param p
-     * @throws DaoException
-     */
     @Override
-    public void edit(Object p) throws DaoException {
-        if(p == null)  new DaoException();
+    public void edit(Object pojo) throws DaoException {
+        if (pojo == null) new DaoException();
         try {
-            baseDao.edit((T) p);
+            baseDao.edit((T) pojo);
         } catch (DaoException e) {
             throw new DaoException(e);
         }
     }
 
-    /**
-     *
-     * @param p
-     * @return
-     * @throws DaoException
-     */
     @Override
     @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
-    public Serializable getIdentifier(Object p) throws DaoException {
+    public Serializable getIdentifier(Object pojo) throws DaoException {
         Serializable id = null;
         try {
-            p = (T) baseDao.getIdentifier((T) p);
+            pojo = (T) baseDao.getIdentifier((T) pojo);
         } catch (DaoException e) {
             throw new DaoException(e);
         }
         return id;
     }
-
 }

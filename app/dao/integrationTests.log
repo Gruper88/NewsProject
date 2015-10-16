@@ -1,0 +1,1464 @@
+2015-10-16 09:53:37 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fb554cc: startup date [Fri Oct 16 09:53:37 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:37 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-16 09:53:38 INFO  Version:54 - HHH000412: Hibernate Core {4.3.7.Final}
+2015-10-16 09:53:38 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-10-16 09:53:38 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-10-16 09:53:38 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:38 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:38 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:38 INFO  Version:27 - HV000001: Hibernate Validator 5.1.0.Final
+2015-10-16 09:53:38 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:38 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:38 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:38 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:38 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:38 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:38 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:38 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:38 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:38 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:38 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:38 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:38 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@127e70c5] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:39 INFO  CategoryDao:47 - Get categories list[by.degtev.news.pojos.Category@6924dfe, by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 09:53:39 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36074e47: startup date [Fri Oct 16 09:53:39 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:39 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:39 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:39 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:39 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:39 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:39 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:39 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@6ef7623] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:39 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d0bfb24: startup date [Fri Oct 16 09:53:39 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:39 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:39 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:39 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:39 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:39 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:39 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:39 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3af356f] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:39 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7e46d648: startup date [Fri Oct 16 09:53:39 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:39 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:39 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:39 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:39 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:39 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:39 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:39 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:39 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:39 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@706cb08] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:39 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:53:39 INFO  BaseDao:44 - get class:by.degtev.news.pojos.Category@6924e1e
+2015-10-16 09:53:39 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59429fac: startup date [Fri Oct 16 09:53:39 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:39 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:39 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:39 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:39 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:40 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:40 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:40 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@108bdbd8] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:40 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:53:40 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 09:53:40 INFO  CategoryDao:61 - Get the news categories[by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 09:53:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46678e49: startup date [Fri Oct 16 09:53:40 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:40 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:40 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:40 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:40 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:40 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:40 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@b965857] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27a7ef08: startup date [Fri Oct 16 09:53:40 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:40 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:40 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:40 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:40 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:40 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:40 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@409986fe] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@22590e3e: startup date [Fri Oct 16 09:53:40 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config_dao_test.xml]
+2015-10-16 09:53:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@446c3920: startup date [Fri Oct 16 09:53:40 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:40 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:40 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:40 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:40 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:40 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:40 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@39ad12b6] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:40 INFO  BaseDao:39 - Get class by id:null
+2015-10-16 09:53:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@211febf3: startup date [Fri Oct 16 09:53:40 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:40 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:40 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:40 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:40 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:40 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:40 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1a87b51] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:40 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:53:40 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 09:53:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59901c4d: startup date [Fri Oct 16 09:53:40 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:40 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:40 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:40 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:40 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:40 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:40 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:40 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:40 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@7dd611c8] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1702830d: startup date [Fri Oct 16 09:53:40 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:41 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:41 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:41 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4b6d92e] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:41 INFO  BaseDao:65 - Delete class by id:null
+2015-10-16 09:53:41 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7899de11: startup date [Fri Oct 16 09:53:41 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:41 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:41 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:41 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4d21c56e] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:41 INFO  BaseDao:91 - Edit class by id:null
+2015-10-16 09:53:41 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7100dea: startup date [Fri Oct 16 09:53:41 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:41 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:41 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:41 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@574a89e2] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:41 INFO  NewsDao:49 - Get news list [by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 09:53:41 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4af45442: startup date [Fri Oct 16 09:53:41 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:41 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:41 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:41 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2e73d5eb] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:41 INFO  NewsDao:65 - Get news by date[by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 09:53:41 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@56399b9e: startup date [Fri Oct 16 09:53:41 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:41 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:41 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:41 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@58b91d57] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:41 INFO  UserDao:98 - Get user by email: by.degtev.news.pojos.User@cbedba34
+2015-10-16 09:53:41 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fbb4061: startup date [Fri Oct 16 09:53:41 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:41 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:41 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:41 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:41 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:41 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@18a25bbd] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:41 INFO  UserDao:49 - Check password:
+2015-10-16 09:53:41 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@221a2068: startup date [Fri Oct 16 09:53:41 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:42 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:42 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:42 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:42 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:42 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@784223e9] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:42 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:53:42 INFO  BaseDao:44 - get class:by.degtev.news.pojos.User@cbedba34
+2015-10-16 09:53:42 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@712c5463: startup date [Fri Oct 16 09:53:42 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:42 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:42 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:42 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:42 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:42 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:42 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@68dd39d2] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:53:42 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60e3c26e: startup date [Fri Oct 16 09:53:42 MSK 2015]; root of context hierarchy
+2015-10-16 09:53:42 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:53:42 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:53:42 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:53:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:53:42 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:53:42 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:53:42 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:53:42 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:53:42 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@40113163] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:54:57 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fb554cc: startup date [Fri Oct 16 09:54:57 MSK 2015]; root of context hierarchy
+2015-10-16 09:54:57 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:54:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-16 09:54:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.7.Final}
+2015-10-16 09:54:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-10-16 09:54:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-10-16 09:54:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:54:58 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:54:58 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:54:58 INFO  Version:27 - HV000001: Hibernate Validator 5.1.0.Final
+2015-10-16 09:54:58 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:54:58 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:54:58 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:54:58 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:54:58 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:54:58 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:54:58 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:54:58 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:54:58 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:54:58 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:54:58 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:54:58 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:54:59 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@127e70c5] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:54:59 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5aa0dbf4: startup date [Fri Oct 16 09:54:59 MSK 2015]; root of context hierarchy
+2015-10-16 09:54:59 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:54:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:54:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:54:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:54:59 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:54:59 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:54:59 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@62c5bbdc] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:54:59 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1bc53649: startup date [Fri Oct 16 09:54:59 MSK 2015]; root of context hierarchy
+2015-10-16 09:54:59 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:54:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:54:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:54:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:54:59 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:54:59 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:54:59 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@30865a90] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:54:59 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:54:59 INFO  BaseDao:44 - get class:by.degtev.news.pojos.Category@6924e1e
+2015-10-16 09:54:59 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@781a9412: startup date [Fri Oct 16 09:54:59 MSK 2015]; root of context hierarchy
+2015-10-16 09:54:59 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:54:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:54:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:54:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:54:59 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:54:59 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:54:59 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@6090f3ca] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:54:59 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:54:59 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 09:54:59 INFO  CategoryDao:61 - Get the news categories[by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 09:54:59 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d6aca33: startup date [Fri Oct 16 09:54:59 MSK 2015]; root of context hierarchy
+2015-10-16 09:54:59 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:54:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:54:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:54:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:54:59 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:54:59 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:54:59 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:54:59 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:54:59 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4a7761b1] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:54:59 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@652ce654: startup date [Fri Oct 16 09:54:59 MSK 2015]; root of context hierarchy
+2015-10-16 09:54:59 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:00 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:00 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:00 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@5bca7664] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:00 INFO  CategoryDao:47 - Get categories list[by.degtev.news.pojos.Category@6924dfe, by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 09:55:00 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27a7ef08: startup date [Fri Oct 16 09:55:00 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:00 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:00 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:00 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@409986fe] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:00 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:55:00 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 09:55:00 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a32fb6: startup date [Fri Oct 16 09:55:00 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:00 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:00 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:00 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@129fed45] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:00 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e48d38: startup date [Fri Oct 16 09:55:00 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:00 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:00 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:00 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@61af1510] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:00 INFO  BaseDao:39 - Get class by id:null
+2015-10-16 09:55:00 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@778d82e9: startup date [Fri Oct 16 09:55:00 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:00 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:00 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:00 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:00 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:00 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@7d9ba6c] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:00 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7dd611c8: startup date [Fri Oct 16 09:55:00 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config_dao_test.xml]
+2015-10-16 09:55:00 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6a937336: startup date [Fri Oct 16 09:55:00 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:01 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:01 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:01 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@33899f7a] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:01 INFO  BaseDao:65 - Delete class by id:null
+2015-10-16 09:55:01 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@290d10ef: startup date [Fri Oct 16 09:55:01 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:01 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:01 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:01 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@726aa968] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:01 INFO  BaseDao:91 - Edit class by id:null
+2015-10-16 09:55:01 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@712cfb63: startup date [Fri Oct 16 09:55:01 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:01 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:01 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:01 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1e1e9ef3] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:01 INFO  NewsDao:49 - Get news list [by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 09:55:01 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1d805aa1: startup date [Fri Oct 16 09:55:01 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:01 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:01 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:01 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@79c5460e] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:01 INFO  NewsDao:65 - Get news by date[by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 09:55:01 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@34b9eb03: startup date [Fri Oct 16 09:55:01 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:01 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:01 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:01 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@61a91c9b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:01 INFO  UserDao:98 - Get user by email: by.degtev.news.pojos.User@cbedba34
+2015-10-16 09:55:01 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63d5874f: startup date [Fri Oct 16 09:55:01 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:01 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:01 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:01 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:01 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:01 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@5d5b9ecb] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:01 INFO  UserDao:49 - Check password:
+2015-10-16 09:55:01 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@338766de: startup date [Fri Oct 16 09:55:01 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:02 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:02 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:02 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@7316523a] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:02 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 09:55:02 INFO  BaseDao:44 - get class:by.degtev.news.pojos.User@cbedba34
+2015-10-16 09:55:02 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6d33a66e: startup date [Fri Oct 16 09:55:02 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:02 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:02 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:02 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4a44cfc0] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 09:55:02 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@80b122b: startup date [Fri Oct 16 09:55:02 MSK 2015]; root of context hierarchy
+2015-10-16 09:55:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 09:55:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 09:55:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 09:55:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 09:55:02 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 09:55:02 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 09:55:02 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 09:55:02 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 09:55:02 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@71a3e05c] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:31 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fb554cc: startup date [Fri Oct 16 10:31:31 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:32 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-16 10:31:32 INFO  Version:54 - HHH000412: Hibernate Core {4.3.7.Final}
+2015-10-16 10:31:32 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-10-16 10:31:32 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-10-16 10:31:32 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:32 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:32 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:33 INFO  Version:27 - HV000001: Hibernate Validator 5.1.0.Final
+2015-10-16 10:31:33 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:33 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:33 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@127e70c5] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:33 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5aa0dbf4: startup date [Fri Oct 16 10:31:33 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:33 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:33 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:33 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:33 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:33 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:33 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:33 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@62c5bbdc] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:33 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@138a7441: startup date [Fri Oct 16 10:31:33 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:33 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:33 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:33 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:33 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:33 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:33 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:33 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:33 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:34 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4b6ac111] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:34 INFO  CategoryDao:47 - Get categories list[by.degtev.news.pojos.Category@6924dfe, by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 10:31:34 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7e46d648: startup date [Fri Oct 16 10:31:34 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:34 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:34 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:34 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@706cb08] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:34 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6b68cb27: startup date [Fri Oct 16 10:31:34 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:34 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:34 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:34 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@287f7811] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:34 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:31:34 INFO  BaseDao:44 - get class:by.degtev.news.pojos.Category@6924e1e
+2015-10-16 10:31:34 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8b4bd0: startup date [Fri Oct 16 10:31:34 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:34 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:34 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:34 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@36f1046f] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:34 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:31:34 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 10:31:34 INFO  CategoryDao:61 - Get the news categories[by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 10:31:34 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@280e8a1a: startup date [Fri Oct 16 10:31:34 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:34 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:34 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:34 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@19b047fe] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:34 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@53dad875: startup date [Fri Oct 16 10:31:34 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config_dao_test.xml]
+2015-10-16 10:31:34 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2eaef76d: startup date [Fri Oct 16 10:31:34 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:34 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:34 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:34 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:34 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4eb45fec] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:35 INFO  BaseDao:39 - Get class by id:null
+2015-10-16 10:31:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3bd3d05e: startup date [Fri Oct 16 10:31:35 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:35 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:35 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@12968227] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:35 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:31:35 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 10:31:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@d8d9199: startup date [Fri Oct 16 10:31:35 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:35 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:35 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1702830d] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@278667fd: startup date [Fri Oct 16 10:31:35 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:35 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:35 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@7899de11] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:35 INFO  BaseDao:65 - Delete class by id:null
+2015-10-16 10:31:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1bc0d349: startup date [Fri Oct 16 10:31:35 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:35 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:35 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@7100dea] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:35 INFO  BaseDao:91 - Edit class by id:null
+2015-10-16 10:31:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@32e54a9d: startup date [Fri Oct 16 10:31:35 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:35 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:35 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3dd31157] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:35 INFO  NewsDao:49 - Get news list [by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 10:31:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f7f3b: startup date [Fri Oct 16 10:31:35 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:35 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:35 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:35 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:35 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@7d904ff1] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:35 INFO  NewsDao:65 - Get news by date[by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 10:31:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@43fda8d9: startup date [Fri Oct 16 10:31:35 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:36 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:36 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:36 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:36 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:36 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@17092fff] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:36 INFO  UserDao:98 - Get user by email: by.degtev.news.pojos.User@cbedba34
+2015-10-16 10:31:36 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60c73e58: startup date [Fri Oct 16 10:31:36 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:36 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:36 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:36 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:36 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:36 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:36 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1ee27d73] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:36 INFO  UserDao:49 - Check password:
+2015-10-16 10:31:36 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3b7eac14: startup date [Fri Oct 16 10:31:36 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:36 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:36 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:36 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:36 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:36 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:36 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@33a55bd8] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:36 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:31:36 INFO  BaseDao:44 - get class:by.degtev.news.pojos.User@cbedba34
+2015-10-16 10:31:36 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2f14b0f6: startup date [Fri Oct 16 10:31:36 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:36 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:36 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:36 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:36 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:36 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:36 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@60e3c26e] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:31:36 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@999b951: startup date [Fri Oct 16 10:31:36 MSK 2015]; root of context hierarchy
+2015-10-16 10:31:36 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:31:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:31:36 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:31:36 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:31:36 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:31:36 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:31:36 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:31:36 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:31:36 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@39c85c1a] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:26 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fb554cc: startup date [Fri Oct 16 10:34:26 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:26 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-16 10:34:27 INFO  Version:54 - HHH000412: Hibernate Core {4.3.7.Final}
+2015-10-16 10:34:27 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-10-16 10:34:27 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-10-16 10:34:27 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:27 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:27 INFO  Version:27 - HV000001: Hibernate Validator 5.1.0.Final
+2015-10-16 10:34:27 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:27 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:27 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:27 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:28 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@127e70c5] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:28 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d72f75e: startup date [Fri Oct 16 10:34:28 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:28 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:28 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:28 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:28 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:28 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:28 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3a7b503d] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:28 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:34:28 INFO  BaseDao:44 - get class:by.degtev.news.pojos.Category@6924e1e
+2015-10-16 10:34:28 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@304b9f1a: startup date [Fri Oct 16 10:34:28 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:28 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:28 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:28 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:28 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:28 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:28 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@31ff1390] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:28 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:34:28 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 10:34:28 INFO  CategoryDao:61 - Get the news categories[by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 10:34:28 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5bb8f9e2: startup date [Fri Oct 16 10:34:28 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:28 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:28 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:28 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:28 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:28 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:28 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2d195ee4] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:28 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@21ab988f: startup date [Fri Oct 16 10:34:28 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:28 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:28 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:28 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:28 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:28 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:28 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:28 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:28 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3e850122] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:29 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@522ba524: startup date [Fri Oct 16 10:34:29 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:29 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:29 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:29 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@105b693d] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:29 INFO  CategoryDao:47 - Get categories list[by.degtev.news.pojos.Category@6924dfe, by.degtev.news.pojos.Category@6924e1e]
+2015-10-16 10:34:29 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@280e8a1a: startup date [Fri Oct 16 10:34:29 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:29 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:29 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:29 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@19b047fe] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:29 INFO  NewsDao:49 - Get news list [by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 10:34:29 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@10bd9df0: startup date [Fri Oct 16 10:34:29 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:29 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:29 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:29 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4f3e7344] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:29 INFO  BaseDao:91 - Edit class by id:null
+2015-10-16 10:34:29 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@62d73ead: startup date [Fri Oct 16 10:34:29 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:29 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:29 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:29 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@5853495b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:29 INFO  BaseDao:65 - Delete class by id:null
+2015-10-16 10:34:29 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2f61d591: startup date [Fri Oct 16 10:34:29 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:29 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:29 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:29 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:29 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:29 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@52169758] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:29 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@459b187a: startup date [Fri Oct 16 10:34:29 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config_dao_test.xml]
+2015-10-16 10:34:29 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@636bbbbb: startup date [Fri Oct 16 10:34:29 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:30 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:30 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:30 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@6944e53e] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:30 INFO  BaseDao:39 - Get class by id:null
+2015-10-16 10:34:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5bc7e78e: startup date [Fri Oct 16 10:34:30 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:30 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:30 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:30 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@dc4a691] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:30 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:34:30 INFO  BaseDao:44 - get class:by.degtev.news.pojos.News@a504f39d
+2015-10-16 10:34:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a87e72: startup date [Fri Oct 16 10:34:30 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:30 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:30 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:30 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4af45442] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@176f7f3b: startup date [Fri Oct 16 10:34:30 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:30 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:30 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:30 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@7d904ff1] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:30 INFO  NewsDao:65 - Get news by date[by.degtev.news.pojos.News@e62dc517, by.degtev.news.pojos.News@a504f39d]
+2015-10-16 10:34:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@43fda8d9: startup date [Fri Oct 16 10:34:30 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:30 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:30 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:30 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@17092fff] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:30 INFO  UserDao:98 - Get user by email: by.degtev.news.pojos.User@cbedba34
+2015-10-16 10:34:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60c73e58: startup date [Fri Oct 16 10:34:30 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:30 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:30 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:30 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:30 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:30 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1ee27d73] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:30 INFO  UserDao:49 - Check password:
+2015-10-16 10:34:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3b7eac14: startup date [Fri Oct 16 10:34:30 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:31 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:31 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:31 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:31 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:31 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:31 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@33a55bd8] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:31 INFO  BaseDao:39 - Get class by id:2
+2015-10-16 10:34:31 INFO  BaseDao:44 - get class:by.degtev.news.pojos.User@cbedba34
+2015-10-16 10:34:31 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2f14b0f6: startup date [Fri Oct 16 10:34:31 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:31 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:31 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:31 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:31 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:31 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:31 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:31 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@60e3c26e] of Hibernate SessionFactory for HibernateTransactionManager
+2015-10-16 10:34:31 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@999b951: startup date [Fri Oct 16 10:34:31 MSK 2015]; root of context hierarchy
+2015-10-16 10:34:31 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring_config_dao_test.xml]
+2015-10-16 10:34:31 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-10-16 10:34:31 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-10-16 10:34:31 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-16 10:34:31 INFO  SchemaValidator:137 - HHH000229: Running schema validator
+2015-10-16 10:34:31 INFO  SchemaValidator:145 - HHH000102: Fetching database metadata
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_category
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_version, f_category_id, f_category]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_date, f_newsid, f_newstext, f_title, f_description, f_version, f_user_id]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_news_category
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_news_id, f_category_id]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_user
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_password, f_version, f_email, f_userid]
+2015-10-16 10:34:31 INFO  TableMetadata:66 - HHH000261: Table found: spring_news_test.t_userdetails
+2015-10-16 10:34:31 INFO  TableMetadata:67 - HHH000037: Columns: [f_surname, f_version, f_name, f_userid]
+2015-10-16 10:34:31 INFO  HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@39c85c1a] of Hibernate SessionFactory for HibernateTransactionManager

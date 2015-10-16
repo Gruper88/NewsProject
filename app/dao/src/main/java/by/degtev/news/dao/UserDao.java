@@ -13,40 +13,27 @@ import java.util.List;
 
 @Repository
 public class UserDao implements IUserDao {
-    private static Logger logger = Logger.getLogger(UserDao.class);
+    final static Logger LOGGER = Logger.getLogger(UserDao.class);
     private SessionFactory sessionFactory;
 
-    /**
-     * autowire constructor with SessionFactory
-     * @param sessionFactory
-     */
     @Autowired
     protected UserDao(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
-    /**
-     * Check the current Session
-     * @return current Session
-     */
-    private Session getSession(){
+    //TODO: To make a separate class !!!
+    private Session getSession() {
         Session session = null;
         try {
             session = sessionFactory.getCurrentSession();
-        }catch (HibernateException e){
-            logger.debug("Could not retrieve pre-bound Hibernate session", e);
+        } catch (HibernateException e) {
+            LOGGER.debug("Unable to get Hibernate session", e);
             session = sessionFactory.openSession();
         }
         if (!(session != null && session.isOpen())) session = sessionFactory.openSession();
         return session;
     }
 
-    /**
-     * comparison username and password in class UserData.
-     * @param email
-     * @param password
-     * @return user for session.
-     */
     @Override
     public String checkPassword(String email, String password) throws DaoException {
         String userForSession = null;
@@ -54,26 +41,19 @@ public class UserDao implements IUserDao {
         try {
             Criteria criteria = getSession().createCriteria(User.class);
             criteria.add(Restrictions.eq("email", email));
-            criteria.add(Restrictions.eq("password",password));
+            criteria.add(Restrictions.eq("password", password));
             List results = criteria.list();
-            if (results.size()>0){
+            if (results.size() > 0) {
                 userForSession = email;
             }
-            logger.info("checkPassword:");
+            LOGGER.info("Check password:");
         } catch (HibernateException e) {
-            logger.error("Error checkPassword " + user + " in Dao" + e);
+            LOGGER.error("Error check password " + user + " in Dao" + e);
             throw new DaoException(e);
         }
         return userForSession;
     }
 
-    /**
-     * HQL query
-     * @param email
-     * @param password
-     * @return
-     * @throws DaoException
-     */
     @Override
     public String checkPasswordHQL(String email, String password) throws DaoException {
         String userForSession = null;
@@ -84,42 +64,30 @@ public class UserDao implements IUserDao {
             query.setParameter("email", email);
             query.setParameter("password", password);
             List results = query.list();
-            if (results.size()>0){
+            if (results.size() > 0) {
                 userForSession = email;
             }
-            logger.info("checkPassword:");
+            LOGGER.info("Check password:");
         } catch (HibernateException e) {
-            logger.error("Error checkPassword " + user + " in Dao" + e);
+            LOGGER.error("Error check password: " + user + " in Dao" + e);
             throw new DaoException(e);
         }
         return userForSession;
     }
 
-    /**
-     * Get list all Users
-     * @return
-     * @throws DaoException
-     */
     @Override
     public List<User> getAllUsers() throws DaoException {
         List<User> userList = new ArrayList<User>();
-        logger.info("Get class all objects:");
         try {
             userList = getSession().createCriteria(User.class).list();
-            logger.info("get clazz:" + userList);
+            LOGGER.info("Get user list:" + userList);
         } catch (HibernateException e) {
-            logger.error("Error get " + userList + " in Dao" + e);
+            LOGGER.error("Error get user list: " + userList + " in Dao" + e);
             throw new DaoException(e);
         }
         return userList;
     }
 
-    /**
-     * Get User By E-mai
-     * @param email
-     * @return
-     * @throws DaoException
-     */
     @Override
     public User getUserByEmail(String email) throws DaoException {
         User user = null;
@@ -127,8 +95,9 @@ public class UserDao implements IUserDao {
             Criteria criteria = getSession().createCriteria(User.class);
             criteria.add(Restrictions.eq("email", email));
             user = (User) criteria.uniqueResult();
+            LOGGER.info("Get user by email: " + user);
         } catch (HibernateException e) {
-            logger.error("Error get " + email + " in Dao" + e);
+            LOGGER.error("Error get user by email: " + email + " in Dao" + e);
             throw new DaoException(e);
         }
         return user;

@@ -1,14 +1,10 @@
 package by.degtev.news.pojos;
 
-/**
- * Created by Yura on 14.12.2014.
- */
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
 import javax.persistence.*;
 import java.io.Serializable;
-
 
 @Entity
 public class UserDetails implements Serializable {
@@ -64,12 +60,10 @@ public class UserDetails implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof UserDetails)) return false;
-
-        UserDetails that = (UserDetails) o;
-
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof UserDetails)) return false;
+        UserDetails that = (UserDetails) obj;
         if (UserId != null ? !UserId.equals(that.UserId) : that.UserId != null) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (surname != null ? !surname.equals(that.surname) : that.surname != null) return false;

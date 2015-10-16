@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
 public class UserDetailsService implements IUserDetailsService {
-    private static Logger logger = Logger.getLogger(UserDetailsService.class);
+    final static Logger LOGGER = Logger.getLogger(UserDetailsService.class);
 
     @Autowired
     private IUserDetailsDao userDetailsDao;

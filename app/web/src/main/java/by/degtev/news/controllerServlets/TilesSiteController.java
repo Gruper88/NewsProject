@@ -23,7 +23,7 @@ import java.util.Set;
 @RequestMapping("/user")
 public class TilesSiteController {
 
-    private static Logger logger = Logger.getLogger(TilesSiteController.class);
+    final static Logger LOGGER = Logger.getLogger(TilesSiteController.class);
 
     @Autowired(required = true)
     private IBaseService baseService;
@@ -44,44 +44,27 @@ public class TilesSiteController {
         return "login";
     }
 
-    /**
-     * Login
-     * @param model
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/login")
-    public String login(ModelMap model)  throws Exception {
+    public String login(ModelMap model) throws Exception {
         return "login";
     }
 
-
-    /**
-     * User starting main page
-     * @param model
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = {"/", "/newses"}, method = RequestMethod.GET)
-    public String mainPage(ModelMap model){
+    public String mainPage(ModelMap model) {
         fillModel(model);
         return "newses";
     }
 
-    /**
-     * One news view
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/oneNews", method = RequestMethod.GET)
     public String one_news(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
         News currentNews = null;
         Integer id = Integer.valueOf(request.getParameter("news_id"));
         try {
-            currentNews = (News) baseService.get(News.class,id);
+            currentNews = (News) baseService.get(News.class, id);
         } catch (DaoException e) {
             massage = "Error getting the news!";
-            logger.error(massage+e);
+            LOGGER.error(massage + e);
         }
         model.put("currentNews", currentNews);
         User autor = currentNews.getAuthor();
@@ -92,12 +75,6 @@ public class TilesSiteController {
         return "oneNews";
     }
 
-    /**
-     * Pagination user page
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/pagination", method = RequestMethod.GET)
     public String pagination(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
@@ -108,7 +85,7 @@ public class TilesSiteController {
             paginationNewsList = newsService.getPagination(start, count);
         } catch (DaoException e) {
             massage = "Pagination error!";
-            logger.error(massage+e);
+            LOGGER.error(massage + e);
         }
         fillModel(model);
         model.put("newsList", paginationNewsList);
@@ -116,12 +93,6 @@ public class TilesSiteController {
         return "newses";
     }
 
-    /**
-     * Sorting user page
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/sorting", method = RequestMethod.GET)
     public String sorting(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
@@ -131,7 +102,7 @@ public class TilesSiteController {
             sortingNewsList = newsService.getSorting(sorting);
         } catch (DaoException e) {
             massage = "Sorting error!";
-            logger.error(massage+e);
+            LOGGER.error(massage + e);
         }
         fillModel(model);
         model.put("newsList", sortingNewsList);
@@ -139,12 +110,6 @@ public class TilesSiteController {
         return "newses";
     }
 
-    /**
-     * Get news by category user page
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/bycategoty", method = RequestMethod.GET)
     public String newsByCategory(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
@@ -152,14 +117,12 @@ public class TilesSiteController {
         List<News> categoryNewsList = new ArrayList<News>();
         Category category = null;
         Set<News> newsSet = new HashSet<News>();
-
         try {
             category = (Category) categoryService.getCategoryByName(categoryName);
         } catch (DaoException e) {
             massage = "Getting category by name error";
-            logger.error(massage+e);
+            LOGGER.error(massage + e);
         }
-
         newsSet = category.getNews();
         categoryNewsList.addAll(newsSet);
         fillModel(model);
@@ -168,22 +131,18 @@ public class TilesSiteController {
         return "newses";
     }
 
-    /**
-     * Fill starting model for jsp page
-     * @param model
-     * @throws java.lang.Exception
-     */
-    void fillModel(ModelMap model)  {
+    void fillModel(ModelMap model) {
         String massage = null;
         int start = 0;
         int count = 5;
+
         //News List
         List<News> newsList = null;
         try {
             newsList = newsService.getPagination(start, count);
         } catch (DaoException e) {
             massage = "Error getting the news!";
-            logger.error(massage+e);
+            LOGGER.error(massage + e);
         }
         model.put("newsList", newsList);
 
@@ -193,17 +152,18 @@ public class TilesSiteController {
             categoryList = categoryService.getAllCategories();
         } catch (DaoException e) {
             massage = "Error getting the categories!";
-            logger.error(massage+e);
+            LOGGER.error(massage + e);
         }
         model.put("categoryList", categoryList);
+
         //Pagination list
         List paginationList = null;
         Integer countNews = 5;
-        try{
-        paginationList = newsService.getPagination(countNews);}
-        catch (DaoException e){
+        try {
+            paginationList = newsService.getPagination(countNews);
+        } catch (DaoException e) {
             massage = "Error getting pagination!";
-            logger.error(massage+e);
+            LOGGER.error(massage + e);
         }
         model.put("paginationList", paginationList);
 

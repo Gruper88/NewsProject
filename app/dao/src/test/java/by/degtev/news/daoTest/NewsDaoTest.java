@@ -16,10 +16,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.sql.Date;
 import java.util.List;
 
-/**
- * Unit test for simple PageDao.
- */
-public class NewsDaoTest extends DaoTest{
+public class NewsDaoTest extends DaoTest {
     private static Transaction transaction = null;
     private static ApplicationContext context;
     private static CategoryDao categoryDao;
@@ -28,7 +25,7 @@ public class NewsDaoTest extends DaoTest{
     private static SessionFactory sessionFactory;
 
 
-    public NewsDaoTest(){
+    public NewsDaoTest() {
         context = new ClassPathXmlApplicationContext("spring_config_dao_test.xml");
         categoryDao = context.getBean("categoryDao", CategoryDao.class);
         newsDao = context.getBean("newsDao", NewsDao.class);
@@ -36,11 +33,8 @@ public class NewsDaoTest extends DaoTest{
         sessionFactory = context.getBean("sessionFactory", SessionFactory.class);
     }
 
-    /**
-     * creating an object NewsDao.
-     */
     @Test
-    public void testDao(){
+    public void testDao() {
         Assert.assertNotNull("Check dao: ", newsDao);
     }
 
@@ -70,30 +64,10 @@ public class NewsDaoTest extends DaoTest{
     }
 
     /**
-     * Adding an object class News.
-     */
-    //@Test
-    public void testAdd() throws DaoException {
-        News news = null;
-        try {
-            news = createObject(news);
-            baseDao.saveOrUpdate(news);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        Assert.assertNotNull("test add news... null ", news);
-        try {
-            baseDao.deleteByObject(news);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
      * Adding an object class News = null.
      */
     @Test(expected = Exception.class)
-    public void testAddNull(){
+    public void testAddNull() {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config_dao_test.xml");
         BaseDao baseDao = context.getBean("baseDao", BaseDao.class);
         News news = null;
@@ -106,46 +80,10 @@ public class NewsDaoTest extends DaoTest{
     }
 
     /**
-     * delete the object class News by id.
-     */
-    //@Test
-    public void testDeleteById() throws DaoException {
-        Integer id;
-        News news_delete_id = createObject(news1);
-        baseDao.saveOrUpdate(news_delete_id);
-        transaction.commit();
-        id = (Integer) baseDao.getIdentifier(news_delete_id);
-        try {
-            news_delete_id = (News) baseDao.delete(News.class, id);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        Assert.assertNotNull("test delete news by Id... ", news_delete_id);
-    }
-
-    /**
-     * delete the object class News by Object.
-     */
-    //@Test
-    public void testDeleteByObject() throws DaoException {
-        Integer id;
-        News news_delete_obj = createObject(news2);
-        baseDao.saveOrUpdate(news_delete_obj);
-        id = (Integer) baseDao.getIdentifier(news_delete_obj);
-        try {
-            baseDao.deleteByObject(news_delete_obj);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        news_delete_obj = (News) baseDao.get(News.class, id);
-        Assert.assertNull("test delete news by Object... ", news_delete_obj);
-    }
-
-    /**
      * delete the object class News by null.
      */
     @Test(expected = Exception.class)
-    public void testDeleteByNull(){
+    public void testDeleteByNull() {
         Integer id = null;
         News news = null;
         try {
@@ -156,34 +94,10 @@ public class NewsDaoTest extends DaoTest{
     }
 
     /**
-     * Editing object class News.
-     */
-    //@Test
-    public void testEdit() throws DaoException {
-        String test_actual = "test1";
-        Integer id;
-        News news = null;
-        news = createObject(news);
-        baseDao.saveOrUpdate(news);
-        id = (Integer) baseDao.getIdentifier(news);
-        try {
-            news.setTitle("test1");
-            baseDao.edit(news);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        news = (News) baseDao.get(News.class, id);
-        String test_inspected = news.getTitle();
-        Assert.assertNotNull("test Edit news by Object... is null ", news);
-        Assert.assertEquals("test Edit news by Object...", test_inspected, test_actual);
-        baseDao.deleteByObject(news);
-    }
-
-    /**
      * Editing object class News = null.
      */
     @Test(expected = Exception.class)
-    public void testEditNull(){
+    public void testEditNull() {
         News news = null;
         try {
             baseDao.edit(news);
@@ -196,7 +110,7 @@ public class NewsDaoTest extends DaoTest{
      * extraction of the all objects class News
      */
     @Test
-    public void testGetAllNews() throws DaoException{
+    public void testGetAllNews() throws DaoException {
         List<News> newses = null;
         newses = newsDao.getAllNews();
         int size = newses.size();
@@ -216,6 +130,5 @@ public class NewsDaoTest extends DaoTest{
         Assert.assertNotNull("test get News By Date is null..... ", newses);
         Assert.assertEquals("test get News By Date Array size: ", 2, size);
     }
-
 
 }

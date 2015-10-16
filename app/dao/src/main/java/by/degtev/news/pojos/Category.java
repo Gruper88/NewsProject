@@ -1,8 +1,5 @@
 package by.degtev.news.pojos;
 
-/**
- * Created by Yura on 14.12.2014.
- */
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
@@ -49,15 +46,12 @@ public class Category implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Category)) return false;
-
-        Category category1 = (Category) o;
-
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Category)) return false;
+        Category category1 = (Category) obj;
         if (category != null ? !category.equals(category1.category) : category1.category != null) return false;
         if (categoryId != null ? !categoryId.equals(category1.categoryId) : category1.categoryId != null) return false;
-
         return true;
     }
 

@@ -19,7 +19,6 @@ public class UserDaoTest extends DaoTest{
     private static UserDao userDao;
     private static SessionFactory sessionFactory;
 
-
     public UserDaoTest(){
         context = new ClassPathXmlApplicationContext("spring_config_dao_test.xml");
         baseDao = context.getBean("baseDao", BaseDao.class);
@@ -27,27 +26,11 @@ public class UserDaoTest extends DaoTest{
         sessionFactory = context.getBean("sessionFactory", SessionFactory.class);
     }
 
-    /**
-     * creating an object UserDao.
-     */
     @Test
     public void testUserDao(){
         Assert.assertNotNull("Check dao: ", userDao);
     }
 
-
-    /**
-     * extraction all User.
-     */
-    //@Test
-    public void testGetAllUser() throws DaoException {
-
-    }
-
-    /**
-     * CheckPassword
-     * @throws by.degtev.news.dao.exceptions.DaoException
-     */
     @Test
     public void testCheckPassword()throws DaoException{
         String password= "test";
@@ -58,9 +41,6 @@ public class UserDaoTest extends DaoTest{
         Assert.assertEquals("test get user (not equals user email)..", email, userForSession);
     }
 
-    /**
-     * extraction  User By Id.
-     */
     @Test
     public void testGetUserById() throws DaoException {
         Integer id = 2;
@@ -71,25 +51,6 @@ public class UserDaoTest extends DaoTest{
         Assert.assertEquals("test get user (not equals user email)..", user_email, user.getEmail());
     }
 
-    /**
-     * Adding an object class User.
-     */
-    //@Test
-    public void testAddUser() throws DaoException {
-        User user = null;
-        try {
-            user = createObject(user);
-            baseDao.saveOrUpdate(user);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        Assert.assertNotNull("test add User... null ", user);
-        baseDao.deleteByObject(user);
-    }
-
-    /**
-     * extraction  User By  Email.
-     */
     @Test
     public void testGetUserByEmail() throws DaoException {
         String user_email = "test2";

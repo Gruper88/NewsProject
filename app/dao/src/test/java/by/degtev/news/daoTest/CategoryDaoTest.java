@@ -22,53 +22,39 @@ public class CategoryDaoTest extends DaoTest {
     private static BaseDao baseDao;
     private static SessionFactory sessionFactory;
 
-
-    public CategoryDaoTest(){
+    public CategoryDaoTest() {
         context = new ClassPathXmlApplicationContext("spring_config_dao_test.xml");
         categoryDao = context.getBean("categoryDao", CategoryDao.class);
         baseDao = context.getBean("baseDao", BaseDao.class);
         sessionFactory = context.getBean("sessionFactory", SessionFactory.class);
     }
 
-
-    /**
-     * check the current Session
-     * @return current Session
-     */
-    private Session getSession(){
+    //TODO: To make a separate class !!!
+    private Session getSession() {
         Session session;
         try {
             session = sessionFactory.getCurrentSession();
-        }catch (HibernateException e){
+        } catch (HibernateException e) {
             session = sessionFactory.openSession();
         }
         if (!(session != null && session.isOpen())) session = sessionFactory.openSession();
         return session;
     }
 
-    /**
-     * creating an object CategoryDao.
-     */
     @Test
-    public void testCategoryDao(){
+    public void testCategoryDao() {
         Assert.assertNotNull("Check dao: ", categoryDao);
     }
 
-    /**
-     * extraction all Categories.
-     */
     @Test
     public void testGetAllCategory() throws DaoException {
         List<Category> categoryList;
         categoryList = categoryDao.getAllCategories();
         int size = categoryList.size();
-        Assert.assertNotNull("test get All Category is null..... ", categoryList);
+        Assert.assertNotNull("test get All Category is null ! ", categoryList);
         Assert.assertEquals("test get All Category Array size: ", 2, size);
     }
 
-    /**
-     * extraction  Category By Category Name.
-     */
     @Test
     public void testGetCategoryByCategoryName() throws DaoException {
         String category_name = "test2";
@@ -78,9 +64,6 @@ public class CategoryDaoTest extends DaoTest {
         Assert.assertEquals("test get Category by  name: ", category_name, category.getCategory());
     }
 
-    /**
-     * Get category be id
-     */
     @Test
     public void testGetCategoryById() throws DaoException {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring_config_dao_test.xml");
@@ -92,30 +75,6 @@ public class CategoryDaoTest extends DaoTest {
         Assert.assertEquals("test get category (not equals category name)..", category_name, category.getCategory());
     }
 
-    /**
-    * Adding an object class Category.
-    */
-    //@Test
-    public void testAddCategory() throws DaoException {
-        Session session = getSession();
-        Category category = null;
-        category = createObject(category);
-        try {
-            baseDao.saveOrUpdate(category);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        Assert.assertNotNull("Add category - null! ", category);
-        try {
-            baseDao.deleteByObject(category);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * Get gategory be news
-     */
     @Test
     public void testGetCategoryByNews() throws DaoException {
         List<Category> categoryList;

@@ -22,7 +22,6 @@ public class DaoException extends Exception {
     public DaoException() {
 
     }
-
     public Exception getException() {
         return exception;
     }

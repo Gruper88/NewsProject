@@ -22,7 +22,6 @@
 <table align="center" bgcolor="#E8E8E8" width=600px>
     <tr>
         <td>
-
             <s:form id="userEditForm" name="user" action="../admin/userAddWrite.html" modelAttribute="user"
                     method="post">
                 <fieldset>
@@ -47,10 +46,8 @@
                     </p>
                 </fieldset>
             </s:form>
-
         </td>
     </tr>
 </table>
-
 </body>
 </html>

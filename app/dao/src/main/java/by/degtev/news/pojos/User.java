@@ -1,8 +1,5 @@
 package by.degtev.news.pojos;
 
-/**
- * Created by Yura on 14.12.2014.
- */
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
@@ -71,12 +68,10 @@ public class User implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof User)) return false;
-
-        User user = (User) o;
-
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof User)) return false;
+        User user = (User) obj;
         if (UserId != null ? !UserId.equals(user.UserId) : user.UserId != null) return false;
         if (email != null ? !email.equals(user.email) : user.email != null) return false;
         if (password != null ? !password.equals(user.password) : user.password != null) return false;

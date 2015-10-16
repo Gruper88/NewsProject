@@ -22,9 +22,6 @@ public class UserDetailDaoTest extends DaoTest {
         sessionFactory = context.getBean("sessionFactory", SessionFactory.class);
     }
 
-    /**
-     * creating an object UserDetailDao.
-     */
     @Test
     public void testUserDetailDao(){
         Assert.assertNotNull("Check dao: ", userDetailsDao);

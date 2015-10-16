@@ -33,22 +33,12 @@ public class TilesAdminController {
     @Autowired(required = true)
     private IUserDetailsService userDetailsService;
 
-    /**
-     * Admin starting main page
-     * @param model
-     * @throws java.lang.Exception
-     */
     @RequestMapping("/adminCommand")
-    public String adminCommand(ModelMap model) throws Exception{
+    public String adminCommand(ModelMap model) throws Exception {
         fillModel(model);
         return "admin";
     }
 
-    /**Edit news
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/newsEdit", method = RequestMethod.GET)
     public String newsEdit(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
@@ -62,15 +52,9 @@ public class TilesAdminController {
         }
         model.put("news", currentNews);
         model.put("massage", massage);
-
         return "newsEdit";
     }
 
-    /**Edit news write
-     * @param model
-     * @param newsNew
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/editWriteNews", method = RequestMethod.POST)
     public String editWriteNews(ModelMap model, News newsNew) throws Exception {
         String massage = null;
@@ -96,13 +80,8 @@ public class TilesAdminController {
         return "admin";
     }
 
-    /**Delete news
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/deleteNews", method = RequestMethod.GET)
-    public String deleteNews(ModelMap model, HttpServletRequest request)  throws Exception {
+    public String deleteNews(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
         Integer id = Integer.valueOf(request.getParameter("news_id"));
         try {
@@ -116,16 +95,11 @@ public class TilesAdminController {
         return "admin";
     }
 
-    /**Add news
-     * @param model
-     * @throws java.lang.Exception
-     */
     @RequestMapping("/newsAdd")
     public String newsAdd(ModelMap model) throws Exception {
         String massage = null;
         List<Category> categoryList = null;
         News news = new News();
-
         try {
             categoryList = categoryService.getAllCategories();
         } catch (DaoException e) {
@@ -138,14 +112,8 @@ public class TilesAdminController {
         return "newsAdd";
     }
 
-    /**Add write news
-     * @param model
-     * @param request
-     * @param news
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/newsAddWrite", method = RequestMethod.POST)
-    public String newsAddWrite(ModelMap model, HttpServletRequest request, News news)  throws Exception {
+    public String newsAddWrite(ModelMap model, HttpServletRequest request, News news) throws Exception {
         String massage = null;
         User user = null;
         Set<Category> categories = new HashSet<Category>();
@@ -182,10 +150,6 @@ public class TilesAdminController {
         return "admin";
     }
 
-    /**Add user
-     * @param model
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/userAdd", method = RequestMethod.GET)
     public String userAdd(ModelMap model) throws Exception {
         User user = new User();
@@ -195,13 +159,6 @@ public class TilesAdminController {
         return "userAdd";
     }
 
-    /**Add write user
-     * @param model
-     * @param request
-     * @param user
-     * @param userDetails
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/userAddWrite", method = RequestMethod.POST)
     public String userAddWrite(ModelMap model, HttpServletRequest request, User user, UserDetails userDetails) throws Exception {
         String massage = null;
@@ -220,11 +177,6 @@ public class TilesAdminController {
         return "admin";
     }
 
-    /**Pagination admin page
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/paginationAdmin", method = RequestMethod.GET)
     public String pagination(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
@@ -243,11 +195,6 @@ public class TilesAdminController {
         return "admin";
     }
 
-    /**Sorting admin page
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/sortingAdmin", method = RequestMethod.GET)
     public String sorting(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
@@ -265,11 +212,6 @@ public class TilesAdminController {
         return "admin";
     }
 
-    /**Get news by category admin page
-     * @param model
-     * @param request
-     * @throws java.lang.Exception
-     */
     @RequestMapping(value = "/bycategotyAdmin", method = RequestMethod.GET)
     public String newsByCategory(ModelMap model, HttpServletRequest request) throws Exception {
         String massage = null;
@@ -293,10 +235,6 @@ public class TilesAdminController {
         return "admin";
     }
 
-    /**Fill starting model for jsp page
-     * @param model
-     * @throws java.lang.Exception
-     */
     void fillModel(ModelMap model) throws Exception {
         String massage = null;
         int start = 0;
@@ -321,6 +259,7 @@ public class TilesAdminController {
             logger.error(massage + e);
         }
         model.put("categoryList", categoryList);
+
         //Pagination list
         List paginationList = null;
         Integer countNews = 5;
@@ -335,5 +274,4 @@ public class TilesAdminController {
         //Error massage
         model.put("massage", massage);
     }
-
 }

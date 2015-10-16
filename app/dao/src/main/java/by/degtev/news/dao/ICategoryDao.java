@@ -11,9 +11,9 @@ public interface ICategoryDao {
 
     public List<Category> getAllCategories() throws DaoException;
 
-    public List<Category> getCategoryByNews(News p) throws DaoException;
+    public List<Category> getCategoryByNews(News news) throws DaoException;
 
-    public Category getCategoryByName(String category_name) throws DaoException;
+    public Category getCategoryByName(String categoryName) throws DaoException;
 
 
 }

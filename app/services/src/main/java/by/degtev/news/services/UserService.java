@@ -13,49 +13,32 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
 public class UserService implements IUserService {
-    private static Logger logger = Logger.getLogger(UserService.class);
+    final static Logger LOGGER = Logger.getLogger(UserService.class);
 
     @Autowired
     private IUserDao userDao;
 
-
-    /**
-     *
-     * @param email
-     * @param password
-     * @return
-     * @throws DaoException
-     */
     @Override
     public String checkPassword(String email, String password) throws DaoException {
-        if(email == null || password == null) new DaoException();
+        if (email == null || password == null) new DaoException();
         String userEmail;
         try {
             userEmail = userDao.checkPassword(email, password);
-        }
-        catch (DaoException e) {
+        } catch (DaoException e) {
             throw new DaoException(e);
         }
         return userEmail;
     }
 
-    /**
-     *
-     * @param email
-     * @return
-     * @throws DaoException
-     */
     @Override
     public User getUserByEmail(String email) throws DaoException {
-        if(email == null) new DaoException();
+        if (email == null) new DaoException();
         User user;
         try {
             user = userDao.getUserByEmail(email);
-        }
-        catch (DaoException e) {
+        } catch (DaoException e) {
             throw new DaoException(e);
         }
         return user;
     }
-
 }

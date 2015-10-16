@@ -14,7 +14,7 @@ public interface ICategoryService {
 
     public List<Category> getCategoryByNews(News news) throws DaoException;
 
-    public Category getCategoryByName(String category_name) throws DaoException;
+    public Category getCategoryByName(String categoryName) throws DaoException;
 
     public Set<Category> getCategoryFromForm(String[] categoriesString) throws DaoException;
 

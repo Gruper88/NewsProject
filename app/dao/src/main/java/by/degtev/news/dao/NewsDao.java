@@ -19,70 +19,52 @@ import java.util.List;
 
 @Repository
 public class NewsDao implements INewsDao {
-    private static Logger logger = Logger.getLogger(NewsDao.class);
+    final static Logger LOGGER = Logger.getLogger(NewsDao.class);
     private SessionFactory sessionFactory;
 
-    /**
-     * autowire constructor with SessionFactory
-     * @param sessionFactory
-     */
     @Autowired
     protected NewsDao(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
-    /**
-     * Check the current Session
-     * @return current Session
-     */
-    private Session getSession(){
+    //TODO: To make a separate class !!!
+    private Session getSession() {
         Session session = null;
         try {
             session = sessionFactory.getCurrentSession();
-        }catch (HibernateException e){
-            logger.debug("Could not retrieve pre-bound Hibernate session", e);
+        } catch (HibernateException e) {
+            LOGGER.debug("Unable to get Hibernate session", e);
             session = sessionFactory.openSession();
         }
         if (!(session != null && session.isOpen())) session = sessionFactory.openSession();
         return session;
     }
 
-    /**
-     * Get List all news
-     * @return ArrayList
-     */
     @Override
     public List<News> getAllNews() throws DaoException {
         List<News> newses = new ArrayList<News>();
-        logger.info("Get class all objects:");
         try {
             newses = getSession().createCriteria(News.class).list();
-            for (News news: newses)getSession().refresh(news);
-            logger.info("get clazz:" + newses);
+            for (News news : newses) getSession().refresh(news);
+            LOGGER.info("Get news list " + newses);
         } catch (HibernateException e) {
-            logger.error("Error get " + newses + " in Dao" + e);
+            LOGGER.error("Error get  news list " + newses + " in Dao" + e);
             throw new DaoException(e);
         }
         return newses;
     }
 
-    /**
-     * Get List by date
-     * @param date
-     * @return ArrayList,
-     */
     @Override
     public List<News> getNewsByDate(Date date) throws DaoException {
         Date date_in = date;
         List<News> newses = new ArrayList<News>();
-        logger.info("Get class all objects By Date:");
         try {
             Criteria criteria = getSession().createCriteria(News.class);
             criteria.add(Restrictions.eq("date", date));
             newses = (List<News>) criteria.list();
-            logger.info("get class By Date:" + newses);
+            LOGGER.info("Get news by date" + newses);
         } catch (HibernateException e) {
-            logger.error("Error get By Date " + newses + " in Dao" + e);
+            LOGGER.error("Error get news by date " + newses + " in Dao" + e);
             throw new DaoException(e);
         }
         return newses;
@@ -90,45 +72,37 @@ public class NewsDao implements INewsDao {
 
     /**
      * Get List sorting by date
+     *
      * @return ArrayList,
      */
     @Override
     public List<News> getSorting(String sorting) throws DaoException {
         List<News> newses = new ArrayList<News>();
-        logger.info("Get class all objects By Date:");
         try {
             Criteria criteria = getSession().createCriteria(News.class);
             criteria.addOrder(Order.asc(sorting));
             newses = (List<News>) criteria.list();
-            for (News news: newses)getSession().refresh(news);
-            logger.info("get class By Date:" + newses);
+            for (News news : newses) getSession().refresh(news);
+            LOGGER.info("Get sorting news" + newses);
         } catch (HibernateException e) {
-            logger.error("Error get By Date " + newses + " in Dao" + e);
+            LOGGER.error("Error get sorting news" + newses + " in Dao" + e);
             throw new DaoException(e);
         }
         return newses;
     }
 
-    /**
-     * Get List Pagination
-     * @param start
-     * @param count
-     * @return
-     * @throws DaoException
-     */
     @Override
     public List<News> getPagination(int start, int count) throws DaoException {
         List<News> newses = new ArrayList<News>();
-        logger.info("Get class all objects By Date:");
         try {
             Criteria criteria = getSession().createCriteria(News.class);
             criteria.setFirstResult(start);
             criteria.setMaxResults(count);
             newses = (List<News>) criteria.list();
-            for (News news: newses)getSession().refresh(news);
-            logger.info("get class By Date:" + newses);
+            for (News news : newses) getSession().refresh(news);
+            LOGGER.info("Get pagination news" + newses);
         } catch (HibernateException e) {
-            logger.error("Error get By Date " + newses + " in Dao" + e);
+            LOGGER.error("Error get pagination news " + newses + " in Dao" + e);
             throw new DaoException(e);
         }
         return newses;

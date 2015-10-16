@@ -21,17 +21,11 @@ public class CategoryServiceTest extends ServiceTest {
         userService = context.getBean("userService", UserService.class);
     }
 
-    /**
-     * creating an object CategoryService.
-     */
     @Test
     public void testNewsService() {
         Assert.assertNotNull("Check categoryService: ", categoryService);
     }
 
-    /**
-     * extraction  Category By Category Name.
-     */
     @Test
     public void testGetCategoryByCategoryName() throws DaoException {
         String category_name = "test2";
@@ -41,9 +35,6 @@ public class CategoryServiceTest extends ServiceTest {
         Assert.assertEquals("test get Category by  name: ", category_name, category.getCategory());
     }
 
-    /**
-     * Adding an object class Category.
-     */
     @Test
     public void testAddCategory() throws DaoException {
         Category category = new Category();
@@ -60,5 +51,4 @@ public class CategoryServiceTest extends ServiceTest {
             e.printStackTrace();
         }
     }
-
 }

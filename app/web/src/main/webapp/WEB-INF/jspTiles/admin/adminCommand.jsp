@@ -31,14 +31,14 @@
     </c:forEach>
 </table>
 
-<table width="100%"  cellspacing="0" cellpadding="10">
+<table width="100%" cellspacing="0" cellpadding="10">
     <tr>
-
         <td height="80" bgcolor="#E8E8E8">
             <form>
                 <button formaction="../admin/newsAdd.html"><spring:message code="admin.addNews"/></button>
             </form>
             <br>
+
             <form>
                 <button formaction="../admin/userAdd.html"><spring:message code="admin.addUser"/></button>
             </form>

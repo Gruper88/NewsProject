@@ -10,12 +10,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Unit test for UserServices.
- */
-public class UserServiceTest extends ServiceTest{
+public class UserServiceTest extends ServiceTest {
 
-    public UserServiceTest(){
+    public UserServiceTest() {
         context = new ClassPathXmlApplicationContext("spring_config_services_test.xml");
         categoryService = context.getBean("categoryService", CategoryService.class);
         newsService = context.getBean("newsService", NewsService.class);
@@ -23,37 +20,27 @@ public class UserServiceTest extends ServiceTest{
         userService = context.getBean("userService", UserService.class);
     }
 
-    /**
-     * creating an object UserDao.
-     */
     @Test
-    public void testUserService(){
+    public void testUserService() {
         Assert.assertNotNull("Check userService: ", userService);
     }
 
-    /**
-     * comparison username and password in class UserData.
-     */
     @Test
-    public  void testCheckPassword() throws DaoException {
-        String password= "test";
+    public void testCheckPassword() throws DaoException {
+        String password = "test";
         String email = "test2";
         String userForSession = null;
         try {
-            userForSession = userService.checkPassword(email,password);
+            userForSession = userService.checkPassword(email, password);
         } catch (DaoException e) {
             e.printStackTrace();
         }
         Assert.assertNotNull("Check user don't work " + userForSession);
         Assert.assertEquals("test get user (not equals user email)..", email, userForSession);
-
     }
 
-    /**
-     *
-     */
     @Test
-    public  void testUserAdd() throws DaoException {
+    public void testUserAdd() throws DaoException {
         User user = new User();
         user.setEmail("test");
         user.setPassword("test");
@@ -65,6 +52,4 @@ public class UserServiceTest extends ServiceTest{
         Assert.assertNotNull("test add User... null ", user);
         baseService.deleteByObject(user);
     }
-
-
 }

@@ -1,14 +1,12 @@
 package by.degtev.news.pojos;
 
-/**
- * Created by Yura on 14.12.2014.
- */
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.Set;
+
 @Entity
 public class News implements Serializable {
     private static final long serialVersionUID = 2L;
@@ -29,7 +27,6 @@ public class News implements Serializable {
     @Column
     @Type(type = "text")
     private String newstext;
-
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "F_USER_ID", nullable = true)
@@ -102,12 +99,10 @@ public class News implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof News)) return false;
-
-        News news = (News) o;
-
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof News)) return false;
+        News news = (News) obj;
         if (date != null ? !date.equals(news.date) : news.date != null) return false;
         if (description != null ? !description.equals(news.description) : news.description != null) return false;
         if (newsId != null ? !newsId.equals(news.newsId) : news.newsId != null) return false;

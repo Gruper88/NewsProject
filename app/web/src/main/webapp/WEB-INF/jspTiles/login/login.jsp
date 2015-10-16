@@ -17,7 +17,7 @@
         body {
             max-width: 900px;
             margin: auto;
-            background:#E8E8E8;
+            background: #E8E8E8;
         }
     </style>
 </head>
@@ -54,11 +54,8 @@
                 document.getElementById('username_or_email').focus();
             </script>
             <p><a href="../user/newses.html"><spring:message code="footer.showAllNews"/></a></p>
-
         </td>
     </tr>
-
 </table>
-
 </body>
 </html>

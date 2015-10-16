@@ -15,12 +15,9 @@ import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
 
-/**
- * Unit test for NewsServices.
- */
-public class NewsServiceTest extends ServiceTest{
+public class NewsServiceTest extends ServiceTest {
 
-    public NewsServiceTest(){
+    public NewsServiceTest() {
         context = new ClassPathXmlApplicationContext("spring_config_services_test.xml");
         categoryService = context.getBean("categoryService", CategoryService.class);
         newsService = context.getBean("newsService", NewsService.class);
@@ -28,18 +25,11 @@ public class NewsServiceTest extends ServiceTest{
         userService = context.getBean("userService", UserService.class);
     }
 
-
-    /**
-     * creating an object NewsService.
-     */
     @Test
     public void testNewsService() {
         Assert.assertNotNull("Check service: ", newsService);
     }
 
-    /**
-     * extraction of the object class News.
-     */
     @Test
     public void testGet() throws DaoException {
         Integer id = 2;
@@ -54,9 +44,6 @@ public class NewsServiceTest extends ServiceTest{
         Assert.assertEquals("test get news (not equals title)..", news.getTitle(), title);
     }
 
-    /**
-     * Adding an object class News.
-     */
     @Test
     public void testAdd() throws DaoException {
         News news = new News();
@@ -77,10 +64,6 @@ public class NewsServiceTest extends ServiceTest{
         }
     }
 
-    /**
-     * delete the object class News.
-     */
-
     @Test
     public void testDelete() throws DaoException {
         Serializable id = null;
@@ -94,27 +77,16 @@ public class NewsServiceTest extends ServiceTest{
         } catch (DaoException e) {
             e.printStackTrace();
         }
-
-        /*try {
-            baseService.delete(News.class, id);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }*/
-
         try {
             baseService.deleteByObject(news);
         } catch (DaoException e) {
             e.printStackTrace();
         }
-        //Assert.assertNotNull("test Identifier news...id null.. ", id);
         Assert.assertNotNull("test add news...news null ", news);
     }
 
-    /**
-     * delete the object class News by null.
-     */
     @Test(expected = Exception.class)
-    public void testDeleteByNull(){
+    public void testDeleteByNull() {
         Integer id = null;
         News news = null;
         try {
@@ -124,33 +96,8 @@ public class NewsServiceTest extends ServiceTest{
         }
     }
 
-    /**
-     * Get Identifier id by object
-     * @throws DaoException
-     */
-    //@Test
-    public void testGetIdentifier() throws DaoException {
-        Serializable id = 2;
-        News news = null;
-        try {
-            news = (News) baseService.get(News.class, id);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        try {
-            id = baseService.getIdentifier(news);
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        Assert.assertNotNull("test Identifier news...id null.. ", id);
-        Assert.assertEquals("test Identifier news...id null..", id, 2);
-    }
-
-    /**
-     * Editing object class News.
-     */
     @Test
-    public void testEdit(){
+    public void testEdit() {
         String test_actual = "test1";
         News news = new News();
         news.setTitle("test");
@@ -178,11 +125,8 @@ public class NewsServiceTest extends ServiceTest{
         }
     }
 
-    /**
-     * extraction of the all objects class News
-     */
     @Test
-    public void testAllNews(){
+    public void testAllNews() {
         List<News> newsList = null;
         try {
             newsList = newsService.getAllNews();
@@ -192,14 +136,10 @@ public class NewsServiceTest extends ServiceTest{
         int size = newsList.size();
         Assert.assertNotNull("test get All News is null..... ", newsList);
         Assert.assertEquals("test get All News Array size: ", 2, size);
-
     }
 
-    /**
-     * extraction of the all objects class News By Date
-     */
     @Test
-    public void testAllNewsByDate(){
+    public void testAllNewsByDate() {
         List<News> newses = null;
         Date date = Date.valueOf("2014-12-31");
         try {
@@ -211,7 +151,4 @@ public class NewsServiceTest extends ServiceTest{
         Assert.assertNotNull("test get All News By Date is null..... ", newses);
         Assert.assertEquals("test get All News By Date Array size: ", 2, size);
     }
-
-
-
 }
