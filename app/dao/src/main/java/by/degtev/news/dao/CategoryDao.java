@@ -53,10 +53,10 @@ public class CategoryDao implements ICategoryDao {
     }
 
     @Override
-    public List<Category> getCategoryByNews(News p) throws DaoException {
+    public List<Category> getCategoryByNews(News news) throws DaoException {
         List<Category> categories = new ArrayList<Category>();
         try {
-            Set set = p.getCategories();
+            Set set = news.getCategories();
             categories.addAll(set);
             LOGGER.info("Get the news categories" + categories);
         } catch (HibernateException e) {

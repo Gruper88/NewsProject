@@ -87,11 +87,11 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     @Override
-    public void edit(T p) throws DaoException {
-        LOGGER.info("Edit class by id:" + p);
+    public void edit(T pojo) throws DaoException {
+        LOGGER.info("Edit class by id:" + pojo);
         try {
-            getSession().update(p);
-            LOGGER.info("Edit:" + p);
+            getSession().update(pojo);
+            LOGGER.info("Edit:" + pojo);
         } catch (HibernateException e) {
             LOGGER.error("Error Edit Object in Dao" + e);
             throw new DaoException(e);
@@ -99,10 +99,10 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     @Override
-    public Serializable getIdentifier(T oojo) throws DaoException {
+    public Serializable getIdentifier(T pojo) throws DaoException {
         Serializable id = null;
         try {
-            id = getSession().getIdentifier(oojo);
+            id = getSession().getIdentifier(pojo);
         } catch (HibernateException e) {
             LOGGER.error("Error was thrown in Dao", e);
             throw new DaoException(e);
