@@ -103,8 +103,8 @@
                    <groupId>com.sun.jmx</groupId>
                    <artifactId>jmxri</artifactId>
                </exclusion>
-            </exclusions
-            -->
+        </exclusions
+        -->
         </dependency>
 
         <!--slf4j-->
@@ -196,7 +196,6 @@
             <version>${spring.version}</version>
         </dependency>
 
-
         <!--Spring-security-->
         <dependency>
             <groupId>org.springframework.security</groupId>
@@ -213,7 +212,6 @@
             <artifactId>spring-security-taglibs</artifactId>
             <version>${spring.securiry}</version>
         </dependency>
-
     </dependencies>
 
 </project>
