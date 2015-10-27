@@ -57,11 +57,11 @@ public class BaseService<T> implements IBaseService<T> {
     }
 
     @Override
-    public T delete(Class clazz, Serializable id) throws DaoException {
+    public T delete(Class obj, Serializable id) throws DaoException {
         if (id == null) return (T) new DaoException();
         T pojo = null;
         try {
-            pojo = (T) baseDao.delete(clazz, id);
+            pojo = (T) baseDao.delete(obj, id);
         } catch (DaoException e) {
             throw new DaoException(e);
         }

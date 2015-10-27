@@ -35,15 +35,15 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     @Override
-    public T get(Class<T> clazz, Serializable id) throws DaoException {
+    public T get(Class<T> obj, Serializable id) throws DaoException {
         LOGGER.info("Get class by id:" + id);
         T pojo = null;
         try {
-            pojo = (T) getSession().get(clazz, id);
+            pojo = (T) getSession().get(obj, id);
             getSession().refresh(pojo);
             LOGGER.info("get class:" + pojo);
         } catch (HibernateException e) {
-            LOGGER.error("Error get " + clazz + " in Dao" + e);
+            LOGGER.error("Error get " + obj + " in Dao" + e);
             throw new DaoException(e);
         }
         return pojo;
@@ -61,13 +61,13 @@ public class BaseDao<T> implements IBaseDao<T> {
     }
 
     @Override
-    public T delete(Class<T> clazz, Serializable id) throws DaoException {
+    public T delete(Class<T> obj, Serializable id) throws DaoException {
         LOGGER.info("Delete class by id:" + id);
         T pojo = null;
         try {
-            pojo = (T) getSession().get(clazz, id);
+            pojo = (T) getSession().get(obj, id);
             getSession().delete(pojo);
-            LOGGER.info("Delete:" + clazz);
+            LOGGER.info("Delete:" + obj);
         } catch (HibernateException e) {
             LOGGER.error("Error delete ... in Dao" + e);
             throw new DaoException(e);
